@@ -1,0 +1,117 @@
+{
+    "person_in_charge": "Ilham",
+    "date_profiling": "2026-04-29 10:57:52.835802",
+    "result": {
+        "products": {
+            "missing_values": {
+                "product_id": "0.0",
+                "product_name": "0.0",
+                "category": "0.0",
+                "unit_price": "0.0",
+                "cost_price": "0.0",
+                "in_stock": "0.0",
+                "created_at": "0.0"
+            },
+            "numeric_type": {
+                "unit_price": false,
+                "cost_price": false
+            },
+            "negative_value": {
+                "unit_price": "False",
+                "cost_price": "False"
+            }
+        },
+        "inventory_tracking": {
+            "missing_values": {
+                "tracking_id": "0.0",
+                "product_id": "0.0",
+                "quantity_change": "0.0",
+                "change_date": "0.0",
+                "reason": "0.0",
+                "created_at": "0.0"
+            },
+            "date_validate": {
+                "is_valid_change_date": 1.0
+            },
+            "numeric_type": {
+                "quantity_change": true
+            },
+            "negative_value": {
+                "quantity_change": "False"
+            }
+        },
+        "orders": {
+            "missing_values": {
+                "order_id": "0.0",
+                "employee_id": "0.0",
+                "customer_id": "24.75",
+                "order_date": "0.0",
+                "total_amount": "0.0",
+                "payment_method": "0.0",
+                "order_status": "0.0",
+                "created_at": "0.0"
+            },
+            "date_validate": {
+                "is_valid_order_date": 1.0
+            },
+            "numeric_type": {
+                "total_amount": true
+            },
+            "negative_value": {
+                "total_amount": "False"
+            }
+        },
+        "order_details": {
+            "missing_values": {
+                "order_detail_id": "0.0",
+                "order_id": "0.0",
+                "product_id": "0.0",
+                "quantity": "0.0",
+                "unit_price": "0.0",
+                "subtotal": "0.0",
+                "created_at": "0.0"
+            },
+            "numeric_type": {
+                "unit_price": true,
+                "quantity": true,
+                "subtotal": true
+            },
+            "negative_value": {
+                "unit_price": "False",
+                "quantity": "False",
+                "subtotal": "False"
+            }
+        },
+        "customers": {
+            "missing_values": {
+                "customer_id": "0.0",
+                "first_name": "0.0",
+                "last_name": "0.0",
+                "email": "0.0",
+                "phone": "1.96",
+                "loyalty_points": "0.0",
+                "created_at": "0.0"
+            },
+            "numeric_type": {
+                "loyalty_points": true
+            },
+            "negative_value": {
+                "loyalty_points": "True"
+            }
+        },
+        "employees": {
+            "missing_values": {
+                "employee_id": "0.0",
+                "first_name": "0.0",
+                "last_name": "0.0",
+                "hire_date": "0.0",
+                "role": "0.0",
+                "email": "0.0",
+                "created_at": "0.0"
+            },
+            "date_validate": {
+                "is_valid_hire_date": 1.0
+            }
+        }
+    }
+}
